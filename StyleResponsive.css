@@ -136,4 +136,49 @@
     footer p{
         font-size: 12px;
     }
+    .hero-section-text,.typed-out1,.typed-out2{
+        transition: opacity 0.5s ease-in-out;
+    }
+    .hero-section-text{
+        position: sticky;
+        top: 250px;
+        color: transparent;
+        -webkit-text-stroke:1px rgb(0, 0, 0);
+    }
+    .hero-section h1 {
+        position: absolute;
+        top:30px;
+        left:2%;
+        overflow: hidden;
+        font-size: 1.9rem;
+        font-weight: bold;
+        border-right: .10em solid rgb(0, 0, 0);
+        white-space: nowrap;
+        padding-right: 5px;
+        width: 0;
+        animation: typing 4s forwards 2s;
+    }
+    .hero-section p {
+        position: absolute;
+        top:60px;
+        left:7%;
+        overflow: hidden;
+        color: #333;
+        font-size: 1rem;
+        border-right: .15em solid rgb(0, 0, 0);
+        white-space: nowrap;
+        padding-right: 5px;
+        width: 0;
+        animation: typing1 4s forwards 5s;
+    }
+      @keyframes typing {
+        0% { width: 0 }
+        95% {border-right: .10em solid rgb(0, 0, 0);}
+        100% { width: 350px ; border-right:transparent;}
+      }
+      @keyframes typing1 {
+        0% { width: 0 }
+        95% {border-right: .15em solid rgb(0, 0, 0);}
+        100% { width: 300px ; border-right:transparent;}
+      }
 }
